@@ -1,0 +1,23 @@
+﻿@model TypedandUntypedView.Models.Student
+
+
+    <h2>Index</h2>
+
+    <div class="row">
+        <b>Student ID:</b>  @Model.StudentID
+        <br />
+        <b> Student Name:</b> @Model.Name
+        <br />
+        <b> Mobile No:</b>  @Model.MobileNo
+        <br />
+        <b> Address:</b>   @Model.Address
+        <br />
+        <div class="display-field">
+            <img src="@Url.Content(Model.Image)" alt="JIO" />
+
+        </div>
+
+    </div>
+
+
+

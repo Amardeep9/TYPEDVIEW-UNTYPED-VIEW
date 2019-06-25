@@ -1,0 +1,23 @@
+﻿@using TypedandUntypedView.Models
+@{
+    ViewBag.Title = "ListUnTypedViewData";
+}
+
+<h2>ListUnTypedViewData</h2>
+
+<div class=" row">
+    @foreach (var obj in  (List<Student>)ViewData["Students"])
+    {
+        <b>Student ID:</b>@obj.StudentID
+        <br />
+
+        <b>Student Name</b>@obj.Name
+        <br />
+        <b>Student Mobile:</b>@obj.MobileNo
+        <br />
+        <b>Student Address:</b>@obj.Address
+        <br />
+    }
+
+
+</div>

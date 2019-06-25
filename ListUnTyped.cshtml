@@ -1,0 +1,24 @@
+﻿@using TypedandUntypedView.Models
+@{
+
+//Student objstu = ViewBag.StuLst;
+}
+
+<h2>ListUnTyped</h2>
+
+<div class=" row">
+    @foreach (var obj in ViewBag.StuLst)
+    {
+        <b>Student ID:</b>@obj.StudentID
+        <br />
+
+        <b>Student Name</b>@obj.Name
+        <br />
+        <b>Student Mobile:</b>@obj.MobileNo
+        <br />
+        <b>Student Address:</b>@obj.Address
+        <br />
+    }
+
+
+</div>

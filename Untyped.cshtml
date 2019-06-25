@@ -1,0 +1,25 @@
+﻿@using TypedandUntypedView.Models;
+
+@{
+
+
+    Student objstu = ViewBag.Stud;// no conversion
+    var imagepath = ViewBag.Logo;
+}
+
+    <div class="row">
+        <b>Student ID:</b>  @objstu.StudentID
+        <br />
+        <b> Student Name:</b> @objstu.Name
+        <br />
+        <b> Mobile No:</b>  @objstu.MobileNo
+        <br />
+        <b> Address:</b>   @objstu.Address
+        <br />
+       
+        <br />
+    </div>
+
+<div id="drawForm">
+    <img src="@ViewBag.Logo" alt="Samsung20" />
+</div>

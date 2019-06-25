@@ -1,0 +1,22 @@
+﻿@model IEnumerable<TypedandUntypedView.Models.Student>
+    @using TypedandUntypedView.Models
+
+
+<h2>ListTyped</h2>
+
+<div class=" row">
+    @foreach (Student obj in Model)
+    {
+        <b>Student ID:</b>@obj.StudentID
+        <br />
+
+        <b>Student Name</b>@obj.Name
+        <br />
+        <b>Student Mobile:</b>@obj.MobileNo
+        <br />
+        <b>Student Address:</b>@obj.Address
+        <br />
+    }
+
+
+</div>
